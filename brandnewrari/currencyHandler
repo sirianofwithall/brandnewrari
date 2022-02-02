@@ -1,0 +1,8 @@
+let currency = 0;
+setInterval(() => {
+    // score
+    score += 1;  
+    document.getElementById('scoreboard').innerHTML = 'Score: ' + score;
+    // currency score
+    currency += 1;
+}, 1000);
