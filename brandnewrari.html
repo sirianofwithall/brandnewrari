@@ -113,7 +113,7 @@
 
     setInterval(() => {
         let roadblock = new obstacle;
-	if (spawnRate > 0) {
+	if (parseInt(spawnRate) > 0) {
 		spawnRate -= 10;
 	}
     }, spawnRate);
