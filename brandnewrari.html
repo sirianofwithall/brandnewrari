@@ -30,6 +30,7 @@
       <h1 style='text-align:center; color: white;' id='scoreboard'>Score: 0</h1>
     <script src='currencyHandler'></script>
 	<script>
+	let spawnRate = 500;
         let score = 0;
         // movement of the car
 
@@ -112,7 +113,10 @@
 
     setInterval(() => {
         let roadblock = new obstacle
-    }, 500);
+	if (spawnRate > 0) {
+		spawnRate -= 10;
+	}
+    }, spawnRate);
     </script>
   </body>
 </html>
